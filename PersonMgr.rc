@@ -1,0 +1,876 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PersonMgr.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREEVIEW            BITMAP  DISCARDABLE     "res\\TREEVIEW.bmp"
+IDB_UP                  BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_DOWN                BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_UP1                 BITMAP  DISCARDABLE     "res\\up1.bmp"
+IDB_DOWN1               BITMAP  DISCARDABLE     "res\\down1.bmp"
+IDB_PLAY                BITMAP  DISCARDABLE     "res\\play.bmp"
+IDB_PAUSE               BITMAP  DISCARDABLE     "res\\pause.bmp"
+IDB_STOP                BITMAP  DISCARDABLE     "res\\stop.bmp"
+IDB_PLAY1               BITMAP  DISCARDABLE     "res\\play1.bmp"
+IDB_STOP1               BITMAP  DISCARDABLE     "res\\stop1.bmp"
+IDB_MAX                 BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_PATTERN             BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+IDB_TRAY                BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_QUERYDLG DIALOG DISCARDABLE  0, 0, 420, 13
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 9, "Arial"
+BEGIN
+    RTEXT           "Column1:",IDC_COLUMN1,2,2,47,8
+    COMBOBOX        IDC_COMBO1,54,0,79,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Column2:",IDC_COLUMN2,139,3,35,8
+    COMBOBOX        IDC_COMBO2,179,1,62,53,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Column3:",IDC_COLUMN3,247,3,31,8
+    COMBOBOX        IDC_COMBO3,279,1,92,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Execute",IDC_EXCUTE,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | WS_TABSTOP,375,2,43,10
+END
+
+IDD_EDITDLG DIALOGEX 0, 0, 278, 193
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Dialog..."
+FONT 9, "Arial"
+BEGIN
+    LISTBOX         IDC_COLUMNLIST,7,15,67,129,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LISTBOX         IDC_VALUELIST,78,15,99,129,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_BORDER | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT,7,161,135,26,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL,WS_EX_STATICEDGE
+    CONTROL         "More",IDC_MORE,"Button",BS_OWNERDRAW | WS_TABSTOP,145,
+                    175,28,12
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,199,
+                    175,33,12
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,236,175,33,
+                    12
+    LTEXT           "No any help info!No any help info!No any help info!",
+                    IDC_HELPINFO,182,15,86,128,NOT WS_GROUP
+    LTEXT           "Help Info:",IDC_S_HELPINFO,181,3,32,8
+    LTEXT           "Column:",IDC_S_COLUMN,7,3,28,8
+    LTEXT           "Value:",IDC_S_VALUE,79,3,21,8
+    LTEXT           "",IDC_COLUMNNAME,7,148,97,8
+    CONTROL         "Play",IDC_PLAY,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,109,150,9,9
+    CONTROL         "Play",IDC_PAUSE,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,121,150,9,9
+    CONTROL         "Play",IDC_STOP,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,133,150,9,9
+END
+
+IDD_LOGINDLG DIALOGEX 0, 0, 202, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Welcome To PIM System..."
+FONT 9, "Arial", 0, 0, 0x1
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,6,82,40,11
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,157,
+                    82,41,11
+    LTEXT           "User:",IDC_S_USER,6,39,41,8
+    COMBOBOX        IDC_USERCOMBO,51,37,146,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Password:",IDC_S_PASSWORD,6,54,41,8
+    EDITTEXT        IDC_PSDEDIT,52,52,145,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "",IDC_LOGINBMP,0,0,202,34,SS_CENTERIMAGE | NOT WS_GROUP
+    CONTROL         "&Help",IDC_HELPINFO,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    83,82,40,11
+    LTEXT           "Default Password:1234",IDC_S_DEFAULTPASSWORD,6,69,154,8
+END
+
+IDD_NMUSERDLG DIALOGEX 0, 0, 164, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "New or Modify User..."
+FONT 9, "Arial", 0, 0, 0x1
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,3,69,38,12
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,123,
+                    69,37,12
+    RTEXT           "User:",IDC_USERNAME,8,10,64,8
+    RTEXT           "Old Password:",IDC_OLDPSDNAME,8,24,64,8
+    RTEXT           "New Password:",IDC_NEWPSDNAME,8,38,64,8
+    RTEXT           "Confirm Password:",IDC_CFMPSDNAME,8,52,64,8
+    COMBOBOX        IDC_USERVALUE,79,8,78,40,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OLDPSDVALUE,79,22,78,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_NEWPSDVALUE,79,35,78,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_CFMPSDVALUE,79,50,78,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_ALARMDLG DIALOGEX 0, 0, 185, 100
+STYLE WS_POPUP | WS_BORDER
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    CONTROL         "&Exit",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,72,
+                    88,36,12
+    CTEXT           "Alarm Type",IDC_ALARMTYPE,0,0,185,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_NOTE,1,37,183,49,ES_MULTILINE | ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Alarm Time:",IDC_S_ALARMTIME,1,14,40,8
+    LTEXT           "2003-12-31 12:00:00",IDC_TIME,53,14,129,8
+    LTEXT           "Note",IDC_S_NOTE,1,27,57,8
+END
+
+IDD_DATEDLG DIALOG DISCARDABLE  0, 0, 232, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Get Date And Time..."
+FONT 9, "Arial"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,183,62,38,
+                    11
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,183,
+                    77,38,11
+    CONTROL         "",IDC_CALENDAR1,"{8E27C92B-1264-101C-8A2F-040224009C02}",
+                    WS_TABSTOP,4,13,172,109
+    CONTROL         "Set Time",IDC_SETTIME,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,183,36,38,12
+    CTEXT           "12:59:59",IDC_TIME,181,21,42,8
+    GROUPBOX        "Set Time",IDC_STATIC,180,4,45,51
+    GROUPBOX        "Set Date",IDC_STATIC,2,4,175,118
+END
+
+IDD_TIMEDLG DIALOGEX 0, 0, 93, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Time....."
+FONT 9, "Arial", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITHOUR,10,25,10,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDITMINUTE,34,25,10,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDITSECOND,58,25,10,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "up",IDC_UP,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    BS_CENTER | BS_VCENTER | BS_FLAT | WS_TABSTOP,77,23,10,7
+    CONTROL         "Down",IDC_DOWN,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    BS_CENTER | BS_VCENTER | BS_FLAT | WS_TABSTOP,77,32,10,7
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | BS_FLAT | WS_TABSTOP,4,
+                    50,27,11
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,62,50,27,11
+    LTEXT           "HH",IDC_STATIC,10,13,10,8
+    CTEXT           ":",IDC_STATIC,23,27,8,8
+    CTEXT           ":",IDC_STATIC,47,27,8,8
+    LTEXT           "MM",IDC_STATIC,33,13,12,8
+    LTEXT           "SS",IDC_STATIC,58,13,11,8
+    GROUPBOX        "Time Set",IDC_STATIC,4,2,85,43
+END
+
+IDD_SDSETUPDLG DIALOG DISCARDABLE  0, 0, 140, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Auto Shut Down Time Setup..."
+FONT 9, "Arial"
+BEGIN
+    COMBOBOX        IDC_COMBO_ONOFF,54,9,47,30,CBS_DROPDOWNLIST | 
+                    CBS_UPPERCASE | WS_TABSTOP
+    EDITTEXT        IDC_EDITTIME,54,26,47,12,ES_AUTOHSCROLL
+    CONTROL         "Set",IDC_SETTIME,"Button",BS_OWNERDRAW | WS_TABSTOP,104,
+                    26,32,12
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,4,54,32,11
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,104,
+                    54,32,11
+    LTEXT           "Auto On/Off:",IDC_S_AUTOONOFF,8,11,41,8
+    LTEXT           "Auto Time  :",IDC_S_AUTOTIME,8,28,41,8
+END
+
+IDD_REGDLG DIALOG DISCARDABLE  0, 0, 187, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Weclome to register..."
+FONT 9, "Arial"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,149,11,34,
+                    12
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,149,
+                    26,34,11
+    GROUPBOX        "Register Info",IDC_STATIC,3,3,136,40
+    GROUPBOX        "Help Info",IDC_STATIC,3,48,180,38
+    LTEXT           "Machine Code:",IDC_STATIC,6,14,54,8
+    LTEXT           "Register Code:",IDC_STATIC,6,29,50,8
+    EDITTEXT        IDC_MACHINECODE,60,12,75,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_REGISTERCODE,60,27,75,12,ES_AUTOHSCROLL
+    CONTROL         "Please note PersonMgr is shareware. if you need\nmore function. You can  register it by send the\nEmail that must include ""Machine Code"" !",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP,7,56,174,28
+    LTEXT           "Email:",IDC_STATIC,5,88,22,8
+    LTEXT           "Register Online:",IDC_STATIC,5,108,54,8
+    LTEXT           "shinbo@21cn.com;sales@szlanna.com",IDC_EMAIL,21,97,151,
+                    8
+    LTEXT           "http://www.szlanna.com/register.asp",IDC_WEBSITE,21,118,
+                    162,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_EDITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_LOGINDLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_NMUSERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 160
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_DATEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 225
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_TIMEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 89
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_SDSETUPDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 136
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_REGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 183
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 129
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_USERMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "User"
+    BEGIN
+        MENUITEM "&Copy Email Addr",            IDC_COPYEMAIL
+        MENUITEM "&Copy WebSite Addr",          IDC_COPYWEB
+    END
+    POPUP "Query"
+    BEGIN
+        MENUITEM "&Re-Query",                   IDC_REQUERY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DATEDLG DLGINIT
+BEGIN
+    IDC_CALENDAR1, 0x37a, 414, 0
+0x0000, 0x0000, 0x0023, 0x0000, 0x0001, 0x0000, 0x001b, 0x0000, 0x0001, 
+0x8001, 0x0000, 0x000c, 0x0000, 0x001a, 0x0000, 0x0002, 0x8001, 0x0001, 
+0x0000, 0x0000, 0x0800, 0x1c00, 0x001f, 0x1600, 0x0015, 0xd300, 0x0b07, 
+0x1700, 0x7a00, 0x7ac8, 0xff00, 0x00ff, 0xff00, 0xffff, 0x1200, 0x0000, 
+0xff80, 0x0000, 0x0100, 0x0100, 0x0200, 0x0000, 0x0000, 0x0000, 0x0100, 
+0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 0x0100, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0100, 0x0086, 0xbc00, 0x4402, 0x0142, 
+0x0400, 0xcecb, 0xe5cc, 0x8601, 0x0000, 0x02bc, 0x4244, 0x0001, 0xcb04, 
+0xccce, 0x01e5, 0x0086, 0x9000, 0xc001, 0x01d4, 0x0400, 0xcecb, 0xe5cc, 
+
+    0
+END
+
+IDD_SDSETUPDLG DLGINIT
+BEGIN
+    IDC_COMBO_ONOFF, 0x403, 3, 0
+0x4e4f, "\000" 
+    IDC_COMBO_ONOFF, 0x403, 4, 0
+0x464f, 0x0046, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TRAYICON            ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_GETEMAIL            "Copy Email Addr\nCopy Email Addr"
+    IDC_COPYWEB             "Copy WebSite Addr\nCopy WebSite Addr"
+    IDC_REQUERY             "Retries"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PersonMgr"
+FONT 9, "Arial"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,11,20,20
+    LTEXT           "PersonMgr Version 1.0",IDC_VERSION,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,22,119,8
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    192,8,36,10
+    LTEXT           "http://www.szlanna.com",IDC_WEBSITE,40,33,89,8
+    LTEXT           "shinbo@21cn.com",IDC_EMAIL,63,45,61,8
+    LTEXT           "MSN  : shinbo@Hotmail.com",IDC_STATIC,40,56,101,8
+    LTEXT           "Email :",IDC_STATIC,40,45,21,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&System"
+    BEGIN
+        POPUP "&User Manager"
+        BEGIN
+            MENUITEM "&New User",                   IDC_ADDUSER
+            MENUITEM "&Change Password",            IDC_CHGPSD
+            MENUITEM "&Delete User",                IDC_DELETEUSER
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Print",                      ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Print &Setup",                ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Register",                   IDC_REGISTER, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Action"
+    BEGIN
+        MENUITEM "Refresh\tF5",                 IDC_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "New\tCtrl+I",                 IDC_INSERT
+        MENUITEM "Modify\tCtrl+M",              IDC_MODIFY
+        MENUITEM "Delete\tCtrl+D",              IDC_DELETE
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Email To",                   IDC_EMAIL
+        MENUITEM "&Web Browser",                IDC_BROWSE
+        MENUITEM "&Calculator",                 IDC_CALCULATOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Shut Down",                  IDC_SHUTDOWN
+        MENUITEM SEPARATOR
+        POPUP "Se&tting"
+        BEGIN
+            POPUP "&Language"
+            BEGIN
+                MENUITEM "&Chinese",                    IDC_CHINESE, CHECKED
+                MENUITEM "&English",                    IDC_ENGLISH, CHECKED
+            END
+            POPUP "&Auto Shut Down"
+            BEGIN
+                MENUITEM "&Setup Auto Shut Down Time",  IDC_SETUP_AUTOSD
+            END
+            MENUITEM "&Dynamic Dialog",             IDC_DYNAMIC, CHECKED
+        END
+    END
+    POPUP "&View  "
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR, INACTIVE
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help  "
+    BEGIN
+        MENUITEM "&Contents",                   IDC_HELPINFO
+        MENUITEM "&About",                      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PersonMgr.ico"
+IDR_PERSONTYPE          ICON    DISCARDABLE     "res\\PersonMgrDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    BUTTON      ID_FILE_PRINT_SETUP
+    SEPARATOR
+    BUTTON      IDC_REFRESH
+    SEPARATOR
+    BUTTON      IDC_INSERT
+    BUTTON      IDC_MODIFY
+    BUTTON      IDC_DELETE
+    SEPARATOR
+    BUTTON      IDC_EMAIL
+    BUTTON      IDC_BROWSE
+    BUTTON      IDC_CALCULATOR
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "B",            IDC_COPYWEB,            VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            IDC_DELETE,             VIRTKEY, CONTROL, NOINVERT
+    "E",            IDC_COPYEMAIL,          VIRTKEY, CONTROL, NOINVERT
+    "I",            IDC_INSERT,             VIRTKEY, CONTROL, NOINVERT
+    "M",            IDC_MODIFY,             VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          IDC_REFRESH,            VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PersonMgr MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PersonMgr\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PersonMgr.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "PersonMgr Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "PersonMgr\n\nPerson\n\n\nPersonMgr.Document\nPerson Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PersonMgr"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_AUTO       "test"
+    ID_INDICATOR_REGISTER   "   Not Register!      "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    IDS_ACCOUNT             "Account Section"
+    IDS_PLAN                "Plan,Alarm Section"
+    IDS_CONTACT             "Contact,Website Section"
+    IDS_FAMILY              "Family Section"
+    IDS_OTHER               "Other Section"
+    IDS_BOOLHELPINFO        "Date type: bool ; range: 0 ~ 1"
+    IDS_BYTEHELPINFO        "Date type: byte; range: 0 ~ 255"
+    IDS_SHORTHELPINFO       "Data type: short; range: +/- 0 ~ 32768"
+    IDS_LONGHELPINFO        "Data type: long; range: +/- 0 ~ 2147483648"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_INSERT              "Insert new record\nNew record"
+    IDC_MODIFY              "Modify record\nModify"
+    IDC_DELETE              "Delete the record\nDelete"
+    IDC_REFRESH             "Refresh\nRefresh"
+    IDC_LOGIN               "Login\nLogin"
+    IDC_ADDUSER             "New User\nNew User"
+    IDC_CHGPSD              "Change Password\nChange Password"
+    IDC_EMAIL               "Email To\nEmail"
+    IDC_BROWSE              "Web Browser\nWeb Browser"
+    IDC_SHUTDOWN            "Shut Down\n Quick Shut Down"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CURRENCYHELPINFO    "Data type: Currency; value: +/- 0 ~ 999999999999999.9999"
+    IDS_CALL                "Call Section"
+    IDS_DOUBLEHELPINFO      "Data type: double; range:+/- 0.0 ~ 99999999999.9999"
+    IDS_DATEHELPINFO        "Data type: Date; input method: YEAR-MONTH-DAY HH:MM:SS"
+    IDS_TEXTHELPINFO        "Data type: text"
+    IDS_QUERY_TYPE          "large than:>,not less than:>=,less than:<,not large than:<=,equal:=,not equal:<>,like:LIKE,"
+    IDS_UNDISP_CATALOG      "UserPSD,Once,QueryPlanTask,QueryDayAlarm,QueryWeekAlarm,"
+    IDS_ACCOUNT_CATALOG     "Income,Outgo,Query account status,Query balance by date,Query income by date,Query outgo by date,"
+    IDS_PLAN_CATALOG        "Plan Task,Alarm By Day,Alarm By Week,"
+    IDS_CONTACT_CATALOG     "Contact Man,Favorite Website,"
+    IDS_FAMILY_CATALOG      "Book List,Family Goods,"
+    IDS_OTHER_CATALOG       "other"
+    IDS_ENABLEEMAIL         "Contact Man:Email;"
+    IDS_ENABLEWEB           "Favorite Website:Website Address;Contact Man:Website;"
+    IDS_SIMPLETIMETYPE      "Time"
+    IDS_SIMPLETIMEHELPINFO  "Data type:Simple Time; input method:HH:MM:SS"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CALCULATOR          "Calculator\nCalculator"
+    IDC_DELETEUSER          "Delete User\nDelete User"
+    IDC_SHUTDOWN_SETUP      "Auto Po"
+    IDC_SETUP_AUTOSD        "Setup Auto Shut Down\nAuto Shut Down Setup"
+    IDC_CHINESE             "Chinese\\Chinese"
+    IDC_ENGLISH             "English\nEnglish"
+    IDC_DYNAMIC             "Dynamic Dialog\nDynamic Dialog"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_HELPINFO            "View the Help Info\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SINGLEHELPINFO      "Data type: single; value:+/- 0.0 ~ 99999.99"
+    IDS_ROOT                "Person Info Manager"
+    IDS_VERSION             "PersonMgr V1.08A"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CALL_CATALOG        "Call List,"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PersonMgr.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

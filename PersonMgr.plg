@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PersonMgr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12D.tmp" with contents
+[
+htmlhelp.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/PersonMgr.pdb" /debug /machine:I386 /out:"Debug/PersonMgr.exe" /pdbtype:sept /libpath:"c:\program files\html help workshop\lib" 
+.\Debug\AlarmDlg.obj
+.\Debug\ButtonEx.obj
+.\Debug\calendar.obj
+.\Debug\CtrlExt.obj
+.\Debug\DateDlg.obj
+.\Debug\DialogEx.obj
+.\Debug\EditDlg.obj
+.\Debug\EditEx.obj
+.\Debug\font.obj
+.\Debug\LoginDlg.obj
+.\Debug\MainFrm.obj
+.\Debug\MenuEx.obj
+.\Debug\NMUserDlg.obj
+.\Debug\PersonMgr.obj
+.\Debug\PersonMgrDoc.obj
+.\Debug\PersonMgrListView.obj
+.\Debug\PersonMgrQueryView.obj
+.\Debug\PersonMgrTitleView.obj
+.\Debug\PersonMgrTreeView.obj
+.\Debug\Picture.obj
+.\Debug\RegDlg.obj
+.\Debug\SDSetupDlg.obj
+.\Debug\SplitterWndEx.obj
+.\Debug\StatusBarEx.obj
+.\Debug\StdAfx.obj
+.\Debug\SuperLink.obj
+.\Debug\TimeDlg.obj
+.\Debug\ToolBarEx.obj
+.\Debug\Tray.obj
+.\Debug\PersonMgr.res
+.\GetIDESN.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12D.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : fatal error LNK1104: cannot open file "htmlhelp.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+PersonMgr.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
